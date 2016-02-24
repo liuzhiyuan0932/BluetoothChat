@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 右侧读入内容的view -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/data_update_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <TextView
+            android:id="@+id/tv_me_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:paddingTop="2dp"
+            android:text="2013:4:30"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/item_update_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/update_item_text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_me_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/data_update_layout"
+        android:layout_margin="5dp"
+        android:background="@drawable/me_chat_pop"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="hhhh"
+        android:textSize="15sp" />
+
+</RelativeLayout>
